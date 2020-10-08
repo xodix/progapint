@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Pętle (instrukcje iteracyjne)
+        // 1. for()
+        // for (let i = 0; i < 15; i++) {
+        //     document.write(`$ ${i+1}`);
+        // }
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 2 !== 0) document.write(`${i}, `);
+        // }
+        // // pomijamy liczby: 7, 13
+        // for (let i = 0; i <= 100; i++) {
+        //     if ( i % 2 !== 0 && i !== 7 && i !== 13) document.write(i);
+        // }
+        // wyświetl na ekranie liczby z zakresu od 10 do 99 z dodatkową informacją liczba podzielna przez 3 i przez 5 liczba podielna tylko przez 3 liczba podzielna tylko przez 5
+        let suma = 0;
+        for (let i = 10; i < 100; i++) {
+            if (i % 3 === 0 && i % 5 === 0) suma += i;
+        }
+    </script>
+</body>
+
+</html>
