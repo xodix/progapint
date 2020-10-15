@@ -1,0 +1,9 @@
+<script>
+    let ciag = [];
+    for (let i = 5; i < 1005; i+= 10) {
+        ciag.push(i);
+    }
+    document.write(ciag.join(", "));
+    document.write("<br />");
+    document.write(`Suma elementów ciągu: ${ciag.reduce((prev, curr) => prev + curr)}`);
+</script>
