@@ -1,3 +1,4 @@
+export {};
 let i = 0,
     k = 2;
 do {

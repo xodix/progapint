@@ -1,0 +1,46 @@
+<script>
+
+    function spheareArea(r) {
+        return 4 * Math.PI * (Math.pow(r, 2));
+    };
+    // 4 PI r2
+
+    function spheareVolume(r) {
+        return (4 * Math.PI * (Math.pow(r, 3))) / 3;
+    };
+    // 4/3 PI r3
+
+    function cubeArea(a, b, c) {
+        return 2 * (a * b + a * c + b * c);
+    };
+    // 2ab+2ac+2bc
+
+    function cubeVolume(a, b, c) {
+        return a * b * c;
+    };
+    // abc
+
+    function convertCelsius() {
+        return a + 273.15;
+    };
+
+    // spheareArea(10); -> 1256
+    // spheareVolume(10); -> 4 188,66
+    // cubeArea(2, 5, 10); -> 160
+    // cubeVolume(2, 5, 10); -> 100
+    // convertCelsius(1) -> 274.15
+
+    document.write(spheareArea(10));
+    document.write("<br />")
+
+    document.write(spheareVolume(10));
+    document.write("<br />")
+
+    document.write(cubeArea(2, 5, 10));
+    document.write("<br />")
+
+    document.write(cubeVolume(2, 5, 10));
+    document.write("<br />");
+
+    document.write(convertCelsius(1));
+</script>
