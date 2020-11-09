@@ -3,9 +3,11 @@ const err = document.getElementById('err');
 
 function convert(e) {
 
+  // clears the timeout
   clearTimeout(idiotTimer);
 
   const { name, value } = e.target;
+  // isNan checks if value is empty or just not a number, then it ends the execution of the function
   if (isNaN(+value)) return;
 
   if (name === 'celsius') {
@@ -26,6 +28,7 @@ function convert(e) {
 
 }
 
+// sets the timeout to show how the site is used (yes this could be avoided if I had an hour to think about UX)
 const idiotTimer = window.setTimeout(() => err.textContent = "Hint: numbers on cards are editable inputs! Just click on them and start writing", 15000);
 
 for (const i of inputs) {
