@@ -1,0 +1,177 @@
+define("funkcje/z1", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function z(x) {
+        let razem = '';
+        for (let i = 0; i < x; i++) {
+            razem += '*';
+        }
+        console.log(razem);
+    }
+    ;
+    z(20);
+    console.log('\n');
+    z(30);
+    function z2(x = 2) {
+        let razem = '';
+        for (let i = 0; i < x; i++) {
+            razem += '*';
+        }
+        console.log(razem);
+    }
+    ;
+    z2();
+});
+define("funkcje/z2", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function wypisz(znak, ilosc) {
+        for (let i = 0; i < ilosc; i++) {
+            console.log(znak);
+        }
+    }
+    wypisz("%", 5);
+});
+define("funkcje/z3", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function suma(a, b) {
+        return a + b;
+    }
+    ;
+    function wiek(lat) {
+        if (lat < 18)
+            return "Nie masz 18 lat";
+        if (lat > 18)
+            return "Masz wiecej 18 lat";
+        else
+            return "Masz 18 lat";
+    }
+    ;
+    console.log(wiek(18));
+});
+define("funkcje/z4", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    const spheareArea = (r) => 4 * Math.PI * (r ** 2);
+    const spheareVolume = (r) => (4 * Math.PI * (r ** 3)) / 3;
+    const cubeArea = (a, b, c) => 2 * (a * b + a * c + b * c);
+    const cubeVolume = (a, b, c) => a * b * c;
+    console.log(spheareArea(10));
+    console.log(spheareVolume(10));
+    console.log(cubeArea(2, 5, 10));
+    console.log(cubeVolume(2, 5, 10));
+});
+const circleArea = (r) => Math.PI * r * r;
+console.log(`${circleArea(4557)}`);
+console.log(`${circleArea(33)}`);
+console.log(`${circleArea(12)}`);
+const triangleArea = (a, h) => a * h / 2;
+console.log(`${triangleArea(122, 54)}`);
+console.log(`${triangleArea(654, 654)}`);
+console.log(`${triangleArea(66549, 40)}`);
+function nazwaFunkcji(param1, param2, param3) {
+    console.log('bar');
+}
+const suma = (a, b) => a + b;
+console.log(suma(10, 20));
+function welcome(name) {
+    console.log(`Hello ${name}`);
+}
+const czyParzysta = (liczba) => !(liczba % 2);
+console.log(czyParzysta(100));
+const bezwzgledna = (x) => x < 0 ? -x : x;
+console.log(bezwzgledna(-5));
+const silnia = (x) => {
+    let suma = 1;
+    for (let i = x; i > 0; i--) {
+        suma *= i;
+    }
+    return suma;
+};
+console.log(silnia(5));
+function iloczyn(x, y) {
+    return x * y;
+}
+const iloczyn2 = function (x, y) {
+    return x * y;
+};
+const iloczyn3 = (x, y) => x * y;
+define("pd p\u0119tle/p3", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    let suma = 0;
+    for (let i = 1; i < 100; i += 4) {
+        suma += i;
+    }
+    console.log(suma);
+});
+define("powt\u00F3rzenie wiadomo\u015Bci/z1", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    const a = 3;
+    const b = parseFloat('4.25');
+    let wynik = 0;
+    wynik = a + b;
+    console.log(typeof wynik);
+    console.log(wynik);
+});
+define("powt\u00F3rzenie wiadomo\u015Bci/z2", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    const i1 = +prompt("podaj liczbę punktów") / 20;
+    if (i1 < 0.50) {
+        console.log("ndst");
+    }
+    else if (i1 < 0.70) {
+        console.log("dop");
+    }
+    else if (i1 < 0.81) {
+        console.log('dst');
+    }
+    else if (i1 < 0.91) {
+        console.log("db");
+    }
+    else {
+        console.log("bdb");
+    }
+});
+define("powt\u00F3rzenie wiadomo\u015Bci/z3", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    let y = 0;
+    while (y !== 8) {
+        y = Math.floor(Math.random() * 8) + 1;
+        console.log(y);
+    }
+});
+define("p\u0119tle/1", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    let i = 0, k = 2;
+    do {
+        document.write(`Wynik ${k * i}<br />`);
+        if (k * i > 30)
+            break;
+    } while (i++ < 10);
+});
+define("p\u0119tle/39", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    let x = 10;
+    while (true) {
+        x++;
+        if (x === 27)
+            break;
+    }
+});
+define("p\u0119tle/p2", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    for (let i = 0; i <= 30; i++) {
+        if ((i % 3) !== 0) {
+            continue;
+        }
+        console.log(`${i}; `);
+    }
+});
