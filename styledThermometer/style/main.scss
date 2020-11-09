@@ -1,0 +1,67 @@
+body {
+  background: #191919;
+  color: white;
+  text-align: center;
+  font-size: 2vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 2%;
+  justify-content: center;
+  margin: auto;
+  margin: 0;
+}
+
+.card {
+  margin: 0;
+  background-color: #292929;
+}
+
+hr {
+  color: rgb(255, 255, 255);
+  opacity: .4;
+}
+
+textarea {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  background: inherit;
+  color: white;
+  border: none;
+  border-bottom: 3px solid rgba(255, 255, 255, .5);
+  font-family: 'Bebas Neue';
+  font-size: 1000%;
+  size: 3;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color:  #292929;
+}
+
+textarea::-webkit-scrollbar {
+  width: .05em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+ background: white;
+ opacity: .6;
+ border-radius: 1em;
+}
+
+textarea:focus {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+#err {
+  margin: 3em;
+  color: red;
+}

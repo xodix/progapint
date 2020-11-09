@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="author" content="Bartłomiej Deska">
+  <script src="./script/main.js" defer></script>
+  <link rel="stylesheet" href="./style/main.css">
+  <!-- font for "thermometer" -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Temperature conversion tool!</h1>
+  <p>Just edit the numbers and see the real time conversion</p>
+  <div class="container">
+    <div class="card">
+      <h2>Celsius</h2>
+      <hr>
+      <div class="clock">
+        <textarea name="celsius" rows="2" autofocus>10</textarea>
+      </div>
+      <hr>
+    </div>
+    <div class="card">
+      <h2>Fahrenheit</h2>
+      <hr>
+      <div class="clock">
+        <textarea name="fahrenheit" rows="2">50</textarea>
+      </div>
+      <hr>
+    </div>
+    <div class="card">
+      <h2>Kelvin</h2>
+      <hr>
+      <div class="clock">
+        <textarea name="kelvin" rows="2">283.15</textarea>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <div id="err"></div>
+</body>
+
+</html>
