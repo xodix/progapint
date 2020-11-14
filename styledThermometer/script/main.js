@@ -23,7 +23,7 @@ function convert(e) {
   else {
     if (value < 0) return err.textContent = "Fun fact: kelvin temperature can't be lower than 0";
     inputs[0].value = (+value - 273.15).toFixed(2);
-    inputs[1].value = ((+value - 273.15) * 1.8 + 32).toFixed(2);
+    inputs[1].value = Math.round(((+value - 273.15) * 1.8 + 32) * 100) / 100;
   }
 
 }
