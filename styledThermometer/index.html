@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <meta name="author" content="Bartłomiej Deska">
+  <!-- defer makes the scrip load after html -->
   <script src="./script/main.js" defer></script>
   <link rel="stylesheet" href="./style/main.css">
   <!-- font for "thermometer" -->
@@ -19,25 +20,32 @@
     <div class="card">
       <h2>Celsius</h2>
       <hr>
-      <div class="clock">
-        <textarea name="celsius" rows="2" autofocus>10</textarea>
-      </div>
+      <!-- Theoretically the value is inside form  -->
+      <form>
+        <div class="clock">
+          <textarea name="celsius" rows="2" autofocus>10</textarea>
+        </div>
+      </form>
       <hr>
     </div>
     <div class="card">
       <h2>Fahrenheit</h2>
       <hr>
-      <div class="clock">
-        <textarea name="fahrenheit" rows="2">50</textarea>
-      </div>
+      <form>
+        <div class="clock">
+          <textarea name="fahrenheit" rows="2">50</textarea>
+        </div>
+      </form>
       <hr>
     </div>
     <div class="card">
       <h2>Kelvin</h2>
       <hr>
-      <div class="clock">
-        <textarea name="kelvin" rows="2">283.15</textarea>
-      </div>
+      <form>
+        <div class="clock">
+          <textarea name="kelvin" rows="2">283.15</textarea>
+        </div>
+      </form>
       <hr>
     </div>
   </div>
