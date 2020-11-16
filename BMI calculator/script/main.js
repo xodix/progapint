@@ -19,4 +19,4 @@ function calculateBMICheck(e) {
   f.result.value = result;
 }
 
-f.addEventListener("submit", calculateBMICheck);
+f.addEventListener("submit", calculateBMI);
