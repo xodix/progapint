@@ -1,3 +1,10 @@
+const tablica = ["Ala", "Ola", "Ass"];
+const tab1 = ["Ala", "Ola", "Jan"];
+const tab2 = [];
+tab1.push('Kazimerz');
+const z = new Array("aa", "aaa", "adssadfa", "dasffdsafasfad");
+const suma = (...args) => args.reduce((prev, curr) => prev + curr);
+console.table(z);
 define("funkcje/z1", ["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });

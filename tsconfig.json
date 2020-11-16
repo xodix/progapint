@@ -1,12 +1,16 @@
 {
-    "compilerOptions": {
-      "module": "AMD",
-      "lib": ["ES2020", "ESNext", "DOM"],
-      "target": "es2017",
-      "noImplicitAny": false,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "sourceMap": false,
-      "outFile": "compilerOptions"
-    }
+  "compilerOptions": {
+    "module": "AMD",
+    "lib": [
+      "ES2020",
+      "ESNext",
+      "DOM"
+    ],
+    "target": "es2017",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "outFile": "compilerOptions"
+  }
 }
