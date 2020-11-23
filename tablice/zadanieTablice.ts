@@ -29,6 +29,9 @@ let arr: number[] = [
   +prompt('podaj liczbę')!
 ];
 
+// input control
+if (arr.some((val: number) => isNaN(val))) document.write('<span style="color:red">Wszystkie wartości muszą być numeryczne</span>');
+
 document.write(`Największa: ${Math.max(...arr)}`, '<br />');
 document.write(`Najmniejsza: ${Math.min(...arr)}`, '<br />');
 
