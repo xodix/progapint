@@ -1,0 +1,1 @@
+// applikacja pola i obwody 3 kół o znanych długościach promieni
