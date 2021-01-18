@@ -3,10 +3,10 @@ const Tablica2 = [2, 'b', 4, 'g', 'a', 1, 10, 55, 'aa'];
 
 // taki rodzaj funkcji został zastosowany aby nie stracić znaczenia this
 Array.prototype.sortMixed = function () {
-    this.sort();
-    this.sort((a, b) => a - b);
     const nums = this.filter(element => typeof element === "number");
+    nums.sort((a, b) => a - b);
     const strings = this.filter(element => typeof element === "string");
+    strings.sort();
     return [...strings, ...nums];
 };
 
