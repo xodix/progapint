@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tablice</title>
+</head>
+
+<body>
+
+  <script>
+    const liczby = [2, 50, 21, 11, 211];
+
+    Array.prototype.parzyste = function () { return this.map(elem => elem % 2 ? elem + 1 : elem) }
+    Array.prototype.suma_tab = function () { return this.reduce((prev, curr) => prev + curr) }
+
+    document.write(`Liczby: ${liczby.join(' ; ')}<br>`);
+    document.write(`Liczby parzyste: ${liczby.parzyste().join(', ')}<br>`);
+    document.write(`Liczby suma elementów tablicy: ${liczby.parzyste().suma_tab()}`);
+  </script>
+</body>
+
+</html>

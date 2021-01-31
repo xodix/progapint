@@ -1,0 +1,32 @@
+<script>
+    /* Zadanie 1. 
+    Napisz funkcję ILORAZ wyznaczającą iloraz dwóch zadanych liczb całkowitych. Działanie funkcji sprawdź pisząc odpowiedni program. */
+
+    let iloraz = (a, b) => a / b;
+
+    console.log(iloraz(5, 5));
+
+    /* B. Zmodyfikuj funkcję ILORAZ w ten sposób, aby reagowała na wpisaną przez użytkownika wartość dzielnika 0 */
+
+    iloraz = (a, b) => a === 0 || b === 0 ? console.log('Nie można mnożyć przez zero') : a / b;
+
+    iloraz(5 / 0);
+    iloraz(5 / 1);
+
+    /* Zadanie 2.
+    Napisz  funkcję,  która  ma  trzy  parametry  formalne  a,  b,  c  będące  liczbami  całkowitymi.  Wartością  funkcji  jest jeden, jeśli zadane liczby są liczbami pitagorejskimi oraz zero w przeciwnym wypadku. Liczby pitagorejskie spełniają warunek: a*a+b*b=c*c. */
+    const pythagorianFormula = (a, b, c) => a * a + b * b === c * c ? 1 : 0;
+
+    pythagorianFormula(1, 2, 3);
+    /* B. Wywołaj funkcję liczby... z argumentami takimi jak wyżej, ale musisz uzyskać na ekranie zamiast wartości 0 lub 1 zwracanych przez funkjcę, tekst: "To są liczby pitagorejskie" lub "To nie są liczby pitagorejskie" */
+    const pythagorianFormula2 = (a, b, c) => a * a + b * b === c * c ? "To są liczby pitagorejskie" : "To nie są liczby pitagorejskie";
+
+    pythagorianFormula2(1, 2, 3);
+    /* Zadanie 3.
+    Napisz funkcję, która wyznacza liczbę cyfr zadanej liczby całkowitej. */
+    const sumaLiczb = (liczba) => liczba.
+
+    /* Zadanie 4.
+    Napisz funkcję wypisującą cyfry wczytanej liczby oddzielone od siebie przecinkami. */
+
+</script>

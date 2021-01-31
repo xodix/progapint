@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>podejście obiektowe JS</title>
+</head>
+
+<body>
+  <script>
+    const pojazd = {
+      marka: "Ford",
+      model: "Mustang",
+      rokProdukcji: "2020",
+      przebieg: 15000,
+      nrRej: "WA34789",
+      wyswietlDane() {
+        document.write(`Marka: ${this.marka}, wiek: ${this.model}, rok produkcji: ${this.rokProdukcji}, przebieg: ${this.przebieg}`);
+      },
+      wyswielDetal() {
+        document.write(`Marka: ${this.marka}, nr rejestracyjny: ${this.nrRej}`);
+      }
+    }
+
+    pojazd.wyswietlDane();
+    document.write("<br />");
+    pojazd.wyswielDetal();
+  </script>
+</body>
+
+</html>

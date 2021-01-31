@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label,
+    input,
+    button {
+      display: block;
+      margin: auto;
+    }
+
+    label,
+    header {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" method="get">
+    <header><b>Narzędzie do obliczania pól kół</b></header>
+    <label for="one">Dane pierwszego koła: </label>
+    <input type="number" name="one" value="1" />
+    <label for="two">Dane pierwszego koła: </label>
+    <input type="number" name="two" value="1" />
+    <label for="three">Dane pierwszego koła: </label>
+    <input type="number" name="three" value="1" />
+    <button>Oblicz pola i obwody</button>
+  </form>
+  <div id="1"></div>
+  <div id="2"></div>
+  <div id="3"></div>
+  <script>
+    class Kolo {
+
+      constructor(r) {
+        this.promienK = +r;
+      }
+
+      poleK() {
+        return Math.round(Math.PI * this.promienK * this.promienK * 100) / 100;
+      }
+
+      obwodK() {
+        return (Math.round(2 * Math.PI * this.promienK * 100) / 100);
+      }
+
+    }
+
+    const handleSubmit = (e) => {
+
+      e.preventDefault();
+
+      const k1 = new Kolo(+e.target.one.value);
+      const k2 = new Kolo(+e.target.two.value);
+      const k3 = new Kolo(+e.target.three.value);
+
+      document.getElementById('1').textContent = `pole: ${k1.poleK()} obwód: ${k1.obwodK()}`;
+      document.getElementById('2').textContent = `pole: ${k2.poleK()} obwód: ${k2.obwodK()}`;
+      document.getElementById('3').textContent = `pole: ${k3.poleK()} obwód: ${k3.obwodK()}`;
+
+    }
+
+    document.getElementsByTagName("form")[0].addEventListener("submit", handleSubmit);
+  </script>
+</body>
+
+</html>

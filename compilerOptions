@@ -175,6 +175,19 @@ define("p\u0119tle/p2", ["require", "exports"], function (require, exports) {
         console.log(`${i}; `);
     }
 });
+define("sortowanie n + s/index", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    let Tablica2 = [2, 'b', 4, 'g', 'a', 1, 10, 55, 'aa'];
+    Array.prototype.sortMixed = function () {
+        this.sort();
+        this.sort((a, b) => a - b);
+        const nums = this.filter(element => typeof element === "number");
+        const strings = this.filter(element => typeof element === "string");
+        return [...strings, ...nums];
+    };
+    console.log(Tablica2.sortMixed());
+});
 const tab1 = [7, 3, 1, 6, 9, 5, 4, 10, 2, 2];
 document.write(`${tab1[4]}`, '<br />');
 tab1[6] = 12;
@@ -210,5 +223,12 @@ arr = arr.map((num) => num * num);
 document.write(`ilość liczb parzystych: ${arr.filter((num) => !(num % 2)).length}`, '<br />');
 document.write(`ilość liczb nieparzystych: ${arr.filter((num) => num % 2).length}`, '<br />');
 document.write(`ilość liczb podzielnych przez 3: ${arr.filter((num) => !(num % 3)).length}`, '<br />');
-const imie = ['Anna', 'Adam', 'Piotr', 'Ewa'];
-console.log(imie.reverse().join('\n'));
+function obliczDlugoscWykladziny(szerokosc) {
+    return +szerokosc % 2 === 0 ? szerokosc : +szerokosc + 1;
+}
+const dlugosc = prompt('Wprowadź długość:');
+const szerokosc = prompt('Wprowadź szerokość:');
+document.getElementById('wynik').textContent = `
+Na wymianę wykładziny w sali lekcyjnej o wymiarach: ${dlugosc}[m] x ${szerokosc}[m]
+potrzeba ${obliczDlugoscWykladziny(szerokosc)} mb wykładziny
+`;

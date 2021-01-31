@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wykładzina</title>
+</head>
+
+<body>
+  <div id="wynik"></div>
+  <script>
+    const obliczDlugoscWykladziny = (szerokosc) => dlugosc * szerokosc / 2;
+    const dlugosc = prompt('Wprowadź długość:');
+    const szerokosc = prompt('Wprowadź szerokość:');
+    document.write(`Na wymianę wykładziny w sali lekcyjnej o wymiarach: ${dlugosc}[m] x ${szerokosc}[m] potrzeba ${obliczDlugoscWykladziny(szerokosc)} mb wykładziny`);
+  </script>
+</body>
+
+</html>
