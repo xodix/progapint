@@ -1,0 +1,22 @@
+body {
+  /* dynamic font-size */
+  font-size: 17vw;
+}
+
+#clock {
+  /* centering the clock */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* cool clock font */
+  font-family: 'Orbitron', sans-serif;
+}
+#timezones {
+  font-size: .5em;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin: auto;
+}
