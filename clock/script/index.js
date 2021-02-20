@@ -10,6 +10,7 @@ setInterval(() => {
 //  * interval or timeout aren't perfectly timed
 function calculateTimeZone(Timezone) {
     const timeNow = new Date();
+    // 1min = 1000ms * 60
     const millisecondMulti = 60000;
     timeOffset =
         timeNow.getTimezoneOffset() * millisecondMulti +

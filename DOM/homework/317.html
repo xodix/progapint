@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Przyciski</title>
+</head>
+
+<body>
+  <h1>Rewolucja przemysłowa 4.0</h1>
+  <input type="button" value="Wstecz">
+  <input type="button" value="Dalej">
+  <script>
+    const btns = document.getElementsByTagName('input');
+    btns[0].addEventListener("click", () => history.back());
+    btns[1].addEventListener("click", () => history.forward());
+  </script>
+  <br>
+  <a href="http://localhost:5500/34.html">link do testów</a>
+</body>
+
+</html>

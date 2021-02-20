@@ -14,6 +14,7 @@ setInterval(() => {
 
 function calculateTimeZone(Timezone: number): void {
   const timeNow = new Date();
+  // 1min = 1000ms * 60
   const millisecondMulti = 60_000;
   timeOffset =
     timeNow.getTimezoneOffset() * millisecondMulti +

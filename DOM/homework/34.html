@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tekst</title>
+</head>
+
+<body>
+  <h2>Zmień tekst</h2>
+  <p>Pory roku: <b id="blok"></b></p>
+  <input type="button" value="Zmień tekst">
+  <script>
+    const verses = [
+      "Lato, lato, lato czeka..",
+      "Hu! hu! ha! Nasza zima zła!",
+      "Wiosna, wiosna, wonna i radosna",
+      "Jesień, jesień, jesień z wiatrem zatańczyła liście złote i brązowe wszędzie rozrzuciła.",
+    ]
+    let currIndex = 0;
+    function zmien_tekst() {
+      if (currIndex > verses.length - 1) currIndex = 0;
+      document.getElementById('blok').textContent = verses[currIndex];
+      currIndex++;
+    }
+    document.getElementsByTagName('input')[0].addEventListener("click", zmien_tekst);
+    zmien_tekst();
+  </script>
+</body>
+
+</html>

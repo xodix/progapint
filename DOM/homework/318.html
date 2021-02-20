@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Przyciski</title>
+</head>
+
+<body>
+  <h1>Rewolucja przemysłowa 4.0</h1>
+  <p>Próbowałem kontrolować iframe: błędy w content-security (cross-origin form destination null)</p>
+  <p>Próbowałem kontrolować window.open: kolejne problemy z CORS</p>
+  <p></p>
+  <iframe src="./317.html" width="500" height="500"></iframe>
+  <input type="button" value="Wstecz">
+  <input type="button" value="Dalej">
+  <script>
+    const btns = document.getElementsByTagName('input');
+    const ifr = document.getElementsByTagName('iframe')[0];
+    const win = window.open("./317.html", "", "width=500,height=500");
+    btns[0].addEventListener("click", () => {
+      ifr.contentWindow.history.back();
+      win.history.back();
+    });
+    btns[1].addEventListener("click", () => {
+      ifr.contentWindow.history.forward();
+      win.history.forward();
+    });
+  </script>
+</body>
+
+</html>
