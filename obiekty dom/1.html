@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="skrypt.html" onclick="alert('hello')">strona skrypt.html</a>
+    <button id="button1">kliknij</button>
+    <button id="button2">kliknij przycisk</button>
+    <button id="button3">kliknij trzeci przycisk</button>
+    <button id="button4">kliknij czwarty przycisk</button>
+    <script>
+      document.getElementById("button1").onclick = _ =>
+        alert("Kliknąłeś przycisk 1");
+      document.getElementById("button2").onclick = function () {
+        alert("Kliknąłeś przycisk 2");
+      };
+      document
+        .getElementById("button3")
+        .addEventListener("click", _ => alert("Kliknąłeś przycisk 3"));
+      const kliknijPrzycisk4 = _ => alert("Kliknąłeś przycisk 4");
+      document
+        .getElementById("button4")
+        .addEventListener("click", kliknijPrzycisk4);
+    </script>
+  </body>
+</html>
