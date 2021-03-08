@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./1.js" defer></script>
+</head>
+
+<body>
+  <form name="formularz">
+    <label for="">Nazwisko:</label>
+    <input type="text" name="tekst">
+    <br>
+    <fieldset>
+      <legend>Pole wyboru ulubiony kolor</legend>
+      <input type="radio" name="wybierz" value="czerowny">
+      czerwony
+      <input type="radio" name="wybierz" value="zielony">
+      zielony
+      <input type="radio" name="wybierz" value="inny">
+      inny
+    </fieldset>
+    <br>
+    <select name="lista">
+      <option>Pierwsza</option>
+      <option>Druga</option>
+      <option>Trzecia</option>
+    </select>
+    <br> <br>
+    Pole wieloliniowe Hobby
+    <br>
+    <textarea name="pole"></textarea> <br>
+    Pole checkbox zgoda
+    <input type="checkbox" name="zaznacz" checked>
+    Wyrażam zgodę <br>
+  </form>
+  <div id="wynik"></div>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+4.Utwórzformularz składający się z 5 pól tekstowych położonych jedno pod drugim. Obok każdego pola tekstowego znajdować się ma pole checkbox. Użytkownik wprowadza w pola tekstowe liczby całkowite (dopilnuj tego). Pod formularzem wyświetlać się ma suma liczb z pól tekstowych, ale tylko tych pól, koło których zaznaczony jest checkbox.
