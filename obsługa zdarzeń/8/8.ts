@@ -7,15 +7,16 @@ const ig = document.getElementsByName("ig")[0] as HTMLInputElement;
 // karta dużej rodziny
 const kdr = document.getElementsByName("kdr")[0] as HTMLInputElement;
 
-document.getElementsByTagName("form")[0].addEventListener("submit", () => {
+document.getElementsByTagName("form")[0].addEventListener("submit", (e) => {
+  e.preventDefault();
   // liczba biletów ulgowych
-  let lbu = +bu.value;
-  const freeTickets = Math.floor(lbu / 15);
-  if (freeTickets <= +bn.value) lbu -= freeTickets;
+  let lbn = +bn.value;
+  const freeTickets = Math.floor(lbn / 15);
+  freeTickets <= +bn.value ? (lbn -= freeTickets) : (lbn = 0);
   const cenaPodstawowa =
     +ig.value > 4
-      ? +bn.value * 50 + lbu * 25
-      : +bn.value * 10 * +ig.value + lbu * 5 * +ig.value;
+      ? +bu.value * 25 + lbn * 50
+      : +bu.value * 5 * +ig.value + lbn * 10 * +ig.value;
   document.getElementById(
     "wynik"
   )!.textContent = `Całkowity koszt wstępu do akuaparku: ${
