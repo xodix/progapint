@@ -1,0 +1,1 @@
+Do poprzedniego zadania dodaj obliczenie kosztu transportu. Dodaj pole tekstowe ilość km. Dla obliczeń kosztu transportu przyjmij, że każdy 1km będzie kosztował 50gr za każde rozpoczęte 10kg. Informację o koszcie transportu dopisz do dotychczasowej informacji wynikowej.
