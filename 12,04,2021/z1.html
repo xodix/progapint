@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #b-cz {
+            background-color: red;
+            height: 20px;
+            width: 20px
+        }
+
+        #b-z {
+            background-color: green;
+            height: 20px;
+            width: 20px
+        }
+
+        #b-n {
+            background-color: blue;
+            height: 20px;
+            width: 20px
+        }
+    </style>
+    <script src="./1.js" defer></script>
+</head>
+
+<body>
+    <p>Podaj rozmiar tekstu w procentach: <input type="number" id="proc" min="10" max="300">%</p>
+    <select id="typ-cz">
+        <option value="normal">prosty</option>
+        <option value="italic">kursywa</option>
+        <option value="bold">pogrubienie</option>
+    </select>
+    <p>Jakim kolorem sformatować tekst? Wybierz przycisk</p>
+    <button id="b-cz"></button>
+    <button id="b-z"></button>
+    <button id="b-n"></button>
+    <p id="wynik">To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript</p>
+</body>
+
+</html>
