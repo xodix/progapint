@@ -1,0 +1,27 @@
+:root {
+  font-size: 2vw;
+}
+
+body {
+  background: rgb(25, 25, 25);
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+}
+
+textarea {
+  width: 50%;
+  height: 70%;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+#wynik {
+  color: red;
+}
