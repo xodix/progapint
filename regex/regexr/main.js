@@ -6,6 +6,6 @@ enter.addEventListener("click", function (e) {
     var expression = new RegExp(reg.value);
     var text = editor.value;
     wynik.textContent = expression.test(text)
-        ? reg.value + " jest poprawne!"
-        : reg.value + " jest niepoprawne!";
+        ? "/" + reg.value + "/ jest poprawne!"
+        : "/" + reg.value + "/ jest niepoprawne!";
 });
