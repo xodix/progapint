@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4</title>
+</head>
+
+<body>
+	<div id="opisoceny"></div>
+	<script>
+		(function () {
+			const oo = document.querySelector("#opisoceny")
+			const ocena = 5;
+			switch (ocena) {
+				case 1:
+					oo.textContent = "niedopuszczający";
+					break;
+
+				case 2:
+					oo.textContent = "dopuszczający";
+					break;
+
+				case 3:
+					oo.textContent = "dostateczny";
+					break;
+
+				case 4:
+					oo.textContent = "dobry";
+					break;
+
+				case 5:
+					oo.textContent = "bardzo dobry";
+					break;
+
+				case 6:
+					oo.textContent = "celujący";
+					break;
+
+				default:
+					oo.textContent = "niprawidłowa ocena";
+					break;
+			}
+		})()
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3</title>
+	<style>
+		body {
+			font-size: 3vw;
+			text-align: center !important;
+		}
+
+		* {
+			margin: 1em;
+		}
+	</style>
+</head>
+
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>liczba<sup></sup></th>
+				<th>liczba<sup>2</sup></th>
+			</tr>
+		</thead>
+		<tbody id="tab">
+		</tbody>
+	</table>
+	<script>
+		const tab = document.getElementById("tab");
+		for (let i = 0; i < 10; i++) {
+			// document.createElement("tr") = "<tr></tr>";
+			const tr = document.createElement("tr");
+			const td1 = document.createElement("td");
+			const td2 = document.createElement("td");
+			td1.textContent = i;
+			td2.textContent = i * i;
+			tr.appendChild(td1);
+			tr.appendChild(td2);
+			tab.appendChild(tr);
+		}
+	</script>
+</body>
+
+</html>
