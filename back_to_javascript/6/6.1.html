@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1</title>
+</head>
+
+<body>
+	<button>jeden</button><br>
+	<button>dwa</button><br>
+	<button>trzy</button><br>
+	<div id="wynik"></div>
+	<script>
+		const wynik = document.querySelector("#wynik");
+		const buttons = document.querySelectorAll("button");
+
+		for (const button of buttons) {
+
+			button.addEventListener(
+				"click",
+				() => wynik.innerHTML += "kliknąłeś na przycisk<br>"
+			);
+
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>5</title>
+</head>
+
+<body>
+	<select id="wyb">
+		<option>Wybierz łańcuch górski</option>
+		<option>Tatry</option>
+		<option>Karkonosze</option>
+		<option>Beskidy</option>
+	</select>
+	<br>
+	<img id="wynik" src="wybierz.jpg">
+	<script>
+		const wybor = document.querySelector("#wyb");
+		const wynik = document.querySelector("#wynik");
+
+		wybor.addEventListener("input", () => {
+			switch (wybor.value) {
+				case "Tatry":
+					wynik.setAttribute("src", "rysy.jpg");
+					break;
+				case "Karkonosze":
+					wynik.setAttribute("src", "babia.jpg");
+					break;
+				case "Beskidy":
+					wynik.setAttribute("src", "sniezka.jpg");
+					break;
+
+				default:
+					wynik.setAttribute("src", "wybierz.jpg");
+					break;
+			}
+		})
+	</script>
+</body>
+
+</html>

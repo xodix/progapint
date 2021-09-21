@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2</title>
+</head>
+
+<body>
+	<input type="range" id="suwak" min="0" max="100" value="0">
+	<div id="liczba">0</div>
+	<script>
+		const suwak = document.getElementById("suwak");
+		const liczba = document.getElementById("liczba");
+		suwak.addEventListener("input", () => liczba.textContent = suwak.value);
+	</script>
+</body>
+
+</html>
+
+<!--
+IIFE for scoping
+(function () {
+	const suwak = document.getElementById("suwak");
+	const liczba = document.getElementById("liczba");
+	suwak.addEventListener("input", () => liczba.textContent = suwak.value);
+})();
+-->

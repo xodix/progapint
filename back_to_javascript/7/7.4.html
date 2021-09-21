@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4</title>
+</head>
+
+<body>
+	<select id="wyb">
+		<option>Wybierz łańcuch górski</option>
+		<option>Tatry</option>
+		<option>Karkonosze</option>
+		<option>Beskidy</option>
+	</select>
+	<div id="wynik"></div>
+	<script>
+		const wybor = document.querySelector("#wyb");
+		const wynik = document.querySelector("#wynik");
+
+		wybor.addEventListener("input", () => {
+			switch (wybor.value) {
+				case "Tatry":
+					wynik.textContent = "Najwyższy szczyt Tatr Polskich to Rysy, które ma 2501 m n.p.m.";
+					break;
+				case "Karkonosze":
+					wynik.textContent = "Najwyższy szczyt Karkonoszy to Babia góra, która ma 1725 m n.p.m.";
+					break;
+				case "Sudety":
+					wynik.textContent = "Najwyższy szczyt Sudet to Śnieżka, która ma 1603 m n.p.m.";
+					break;
+
+				default:
+					wynik.textContent = "";
+					break;
+			}
+		})
+	</script>
+</body>
+
+</html>
