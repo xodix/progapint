@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>1</title>
+	<title>3</title>
 </head>
 
 <body>
@@ -14,11 +14,14 @@
 	<button id="button">=</button>
 	<span id="wynik"></span>
 	<script>
-		const input1 = document.querySelector("#input1");
-		const input2 = document.querySelector("#input2");
-		const button = document.querySelector("button");
-		const wynik = document.querySelector("#wynik");
-		button.addEventListener("click", () => wynik.innerHTML = "<b>" + (+input1.value + +input2.value) + "</b>");
+		(function () {
+			const input1 = document.querySelector("#input1");
+			const input2 = document.querySelector("#input2");
+			const button = document.querySelector("button");
+			const wynik = document.querySelector("#wynik");
+
+			button.addEventListener("click", () => wynik.innerHTML = "<b>" + (+input1.value + +input2.value) + "</b>");
+		})();
 	</script>
 </body>
 

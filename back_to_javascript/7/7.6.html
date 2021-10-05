@@ -10,12 +10,21 @@
 
 <body>
 	<form action="">
-		<input type="radio" id=""> <br>
-		<input type="radio" id=""> <br>
-		<input type="radio" id=""> <br>
+		<input type="radio" name="radio" value="200"> 200 <br>
+		<input type="radio" name="radio" value="300"> 300 <br>
+		<input type="radio" name="radio" value="500"> 500 <br>
 	</form>
 	<div id="wynik"></div>
 
+	<script>
+		(function () {
+			const radios = document.getElementsByName("radio");
+			const wynik = document.querySelector("#wynik");
+			for (let i = 0; i < radios.length; i++) {
+				radios[i].addEventListener("input", e => wynik.textContent = e.target.parentElement.radio.value);
+			}
+		})();
+	</script>
 </body>
 
 </html>

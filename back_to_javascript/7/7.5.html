@@ -18,26 +18,28 @@
 	<br>
 	<img id="wynik" src="wybierz.jpg">
 	<script>
-		const wybor = document.querySelector("#wyb");
-		const wynik = document.querySelector("#wynik");
+		(function () {
+			const wybor = document.querySelector("#wyb");
+			const wynik = document.querySelector("#wynik");
 
-		wybor.addEventListener("input", () => {
-			switch (wybor.value) {
-				case "Tatry":
-					wynik.setAttribute("src", "rysy.jpg");
-					break;
-				case "Karkonosze":
-					wynik.setAttribute("src", "babia.jpg");
-					break;
-				case "Beskidy":
-					wynik.setAttribute("src", "sniezka.jpg");
-					break;
+			wybor.addEventListener("input", () => {
+				switch (wybor.value) {
+					case "Tatry":
+						wynik.setAttribute("src", "rysy.jpg");
+						break;
+					case "Karkonosze":
+						wynik.setAttribute("src", "babia.jpg");
+						break;
+					case "Beskidy":
+						wynik.setAttribute("src", "sniezka.jpg");
+						break;
 
-				default:
-					wynik.setAttribute("src", "wybierz.jpg");
-					break;
-			}
-		})
+					default:
+						wynik.setAttribute("src", "wybierz.jpg");
+						break;
+				}
+			});
+		})();
 	</script>
 </body>
 
