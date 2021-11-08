@@ -1,0 +1,15 @@
+<script>
+	const text =
+		"JavaScript jest językiem programowania od zawsze związanym z tworzeniem aplikacji WWW.";
+
+	const words = text.split(" ");
+
+
+	let result = "";
+
+	for (let i = 0; i < words.length; i++) {
+		result += `<div style="background: yellow;">${words[i]}</div>`;
+	}
+
+	document.write(result);
+</script>

@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./s3.js" defer></script>
-  </head>
-  <body>
-    <!-- Napisać aplikajce pozwalającą na obliczenie sumy 2 liczb całkowitych nalerzących do przedziału <1, 100> 
-          Dane wejściowe input typ text
-          errors pod formularzem
-      -->
-    <form>
-      <h1>Dodawanie liczb z przedziału &lt;1, 100&gt;</h1>
-      <br />
-      <label for="l1">liczba 1:</label>
-      <br />
-      <input type="text" name="l1" />
-      <br />
-      <label for="l1">liczba 2</label>
-      <br />
-      <input type="text" name="l1" />
-      <br />
-      <input type="submit" value="Oblicz" />
-      <div id="err"></div>
-    </form>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./s3.js" defer></script>
+</head>
+
+<body>
+  <form>
+    <h1>Dodawanie liczb z przedziału &lt;1, 100&gt;</h1>
+    <br />
+    <label for="l1">liczba 1:</label>
+    <br />
+    <input type="text" name="l1" />
+    <br />
+    <label for="l1">liczba 2</label>
+    <br />
+    <input type="text" name="l1" />
+    <br />
+    <button>Oblicz</button>
+    <div id="err"></div>
+  </form>
+</body>
+
 </html>

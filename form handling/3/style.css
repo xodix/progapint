@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: rgb(25, 25, 25);
+  font-size: 1.2vw;
 }
 
 form {
@@ -22,6 +23,20 @@ form > * {
   margin-bottom: 1em;
 }
 
+label,
+input {
+  font-size: 1.3em;
+}
+
 h1 {
   text-align: center;
+}
+
+button {
+  padding: 0.5em 2em;
+  width: 8em;
+  font-size: 1em;
+  color: white;
+  background-color: rgb(55, 156, 55);
+  border-radius: 1em;
 }

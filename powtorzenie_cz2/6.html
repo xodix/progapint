@@ -1,0 +1,15 @@
+<script>
+  const osoby = [
+    "Jan Nowak",
+    "Kazimierz Zyga",
+    "Stefan Koc",
+    "Ewa Mocek",
+    "Mariusz Abramski",
+  ];
+
+  let cut = osoby.slice(0, 2);
+  osoby.shift();
+  osoby.shift();
+
+  console.log(cut.join("\n"), "\n", osoby);
+</script>

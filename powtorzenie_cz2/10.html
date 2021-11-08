@@ -1,0 +1,19 @@
+<script>
+  const osoby = [
+    "Jan Nowak",
+    "Kazimierz Zyga",
+    "Stefan Koc",
+    "Ewa Mocek",
+    "Mariusz Abramski",
+  ];
+
+  const nazwiska = osoby.map((val) => val.substring(val.indexOf(" ") + 1)).sort();
+
+  let result = "";
+
+  for (let i = 0; i < nazwiska.length; i++) {
+    result += `<h3>${nazwiska[i]}</h3>`;
+  }
+
+  document.write(result);
+</script>

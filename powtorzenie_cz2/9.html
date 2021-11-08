@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>9</title>
+</head>
+
+<body>
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, odio!</p>
+	<p>Molestias minus itaque ex necessitatibus facere, qui sed tenetur possimus!</p>
+	<p>Quia officiis, commodi minima eveniet unde accusamus eum illum ea.</p>
+
+	<div id="result"></div>
+
+	<script>
+		const paragraphs = document.querySelectorAll("p");
+		const result = document.querySelector("#result");
+
+		result.textContent = paragraphs[1].textContent;
+	</script>
+</body>
+
+</html>
